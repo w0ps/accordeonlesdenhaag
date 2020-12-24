@@ -1,0 +1,213 @@
+@font-face {
+	font-family: 'FolksLightRegular';
+	src: url('Folks-Light-webfont.eot');
+	src: url('Folks-Light-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('Folks-Light-webfont.woff') format('woff'),
+			 url('Folks-Light-webfont.ttf') format('truetype'),
+			 url('Folks-Light-webfont.svg#FolksLightRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FolksRegular';
+	src: url('Folks-Normal-webfont.eot');
+	src: url('Folks-Normal-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('Folks-Normal-webfont.woff') format('woff'),
+			 url('Folks-Normal-webfont.ttf') format('truetype'),
+			 url('Folks-Normal-webfont.svg#FolksRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FolksBold';
+	src: url('Folks-Bold-webfont.eot');
+	src: url('Folks-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('Folks-Bold-webfont.woff') format('woff'),
+			 url('Folks-Bold-webfont.ttf') format('truetype'),
+			 url('Folks-Bold-webfont.svg#FolksBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FolksHeavyRegular';
+	src: url('Folks-Heavy-webfont.eot');
+	src: url('Folks-Heavy-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('Folks-Heavy-webfont.woff') format('woff'),
+			 url('Folks-Heavy-webfont.ttf') format('truetype'),
+			 url('Folks-Heavy-webfont.svg#FolksHeavyRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'YokaweradRegular';
+	src: url('Yokawerad-webfont.eot');
+	src: url('Yokawerad-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('Yokawerad-webfont.woff') format('woff'),
+			 url('Yokawerad-webfont.ttf') format('truetype'),
+			 url('Yokawerad-webfont.svg#YokaweradRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*{
+	/*outline: 1px dotted red;*/
+}
+
+.hidden{
+	display: none;
+}
+
+body, html{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif, monospace;
+	background: black;
+	line-height: 1.9em;
+	color: #e8d92d;
+}
+
+#wrapper{
+	max-width: 1000px;
+	height: 75%;
+	margin: 0 auto;
+	background-color: black;
+	outline: 1px solid grey;
+	position: relative;
+	padding: 25px;
+}
+
+p {
+	color: #eee;
+}
+
+section .en{
+	color: #70c2f1;
+}
+
+body.nl .en{
+	display: none;
+}
+
+body.en .nl{
+	display: none;
+}
+
+#home .en,
+#home .nl{
+	display: block; 
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	position: block;
+}
+
+
+ul#menu{
+	background: #469a33;
+	font-family: FolksBold;
+	font-size: 1.5em;
+	margin: 0 auto;
+	padding: 0;
+}
+
+ul#menu li{
+	height: 60px;
+	width: 12.5%;
+	background: orange;
+	float: left;
+	list-style: none;
+	text-align: center;
+	line-height: 60px;
+	cursor: pointer;
+	font-size: 19px;
+}
+
+@media screen and (max-width: 600px) {
+  ul#menu li{
+		background-color: red;
+	}
+  /* CSS for 320px width Modern taskbar layout goes here */
+} 
+
+ul#menu li a{
+	color: white;
+	text-shadow: 0 0 2px black;
+}
+
+ul#menu li a:hover{
+	text-shadow: 0 0 8px black;
+}
+
+ul#menu li:nth-child(1){ background-color: #a46528; }
+ul#menu li:nth-child(2){ background-color: #9a9933; }
+ul#menu li:nth-child(3){ background-color: #7ca924; }
+ul#menu li:nth-child(4){ background-color: #339a53; }
+ul#menu li:nth-child(5){ background-color: #349599; }
+ul#menu li:nth-child(6){ background-color: #D35239; }
+ul#menu li:nth-child(7){ background-color: #D68D0E; }
+ul#menu li:nth-child(8){ background-color: #555555; }
+
+canvas { margin: 0 }
+
+section{
+	padding: 50px;
+	clear: both;
+	margin: 0 auto;
+	box-sizing: content-box;
+	font-family: FolksRegular;
+	font-size: 1.2em;
+	display: block;
+	min-height: 600px;
+}
+
+section h1{
+	font-family: YokaweradRegular;
+	font-size: 30px;
+	position: relative;
+	z-index: 5;
+	margin: 0;
+}
+
+section h2{
+	font-family: YokaweradRegular;
+	font-size: 2em;
+	position: relative;
+	z-index: 5;
+	margin: 0;
+}
+
+section p{
+	position: relative;
+	z-index: 4;
+	margin-left: 20px;
+	max-width: 670px;
+	text-align: left;
+}
+
+section#bosz{
+	
+}
+
+#portrait{
+	top: 30px;
+	bottom: 50px;
+	right: 0px;
+	float: right;
+	margin: 20px;
+	color: #D35239;
+	font-size: .6em;
+	font-stretch: extra-expanded;
+}
+
+.orig{
+	display: none;
+}

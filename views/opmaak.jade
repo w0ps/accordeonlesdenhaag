@@ -1,0 +1,14 @@
+doctype 5
+html(lang="nl")
+  head
+    title= title
+    link(rel='icon', href="/images/favicon.ico")
+    link(rel='stylesheet', href='/stylesheets/reset.css')
+    link(rel='stylesheet', href='/stylesheets/style_.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+  body.nl
+    #wrapper
+      include menuNL
+      a(href=otherL) view in English
+      block content
+      block footer

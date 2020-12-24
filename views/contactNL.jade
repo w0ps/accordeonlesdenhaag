@@ -1,0 +1,20 @@
+extends opmaak
+
+block content
+	section.page
+		h1 Contactgegevens
+		br
+		include('./contactImages.jade')
+		p Om aan te melden, voor vragen of een gratis proefles kunt u contact opnemen per telefoon of email.
+		br
+		p Bosz de Kler
+		p telefoon 06 15465232
+		p
+			a(href="mailto://boszdekler@gmail.com") boszdekler@gmail.com
+		br
+		#location
+			h2 Locatie:
+			include map.jade
+
+block append footer
+	script(src="/javascripts/formhandler.js")

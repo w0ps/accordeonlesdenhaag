@@ -1,0 +1,49 @@
+/*@import ("stylesheets/colors.less")*/
+
+ul#menu{
+	background: #469a33;
+	font-family: FolksBold;
+	font-size: 1.5em;
+	margin: 0 auto 25px;
+	padding: 0;
+	display: flex;
+
+  li{
+	  height: 60px;
+	  list-style: none;
+	  text-align: center;
+	  line-height: 60px;
+	  cursor: pointer;
+	  font-size: 19px;
+		flex-grow: 1;
+
+    a{
+	    color: white;
+      text-decoration: none;
+	    text-shadow: 0 0 2px black;
+         &:hover{
+           text-shadow: 0 0 8px black;
+         }
+    }
+  }
+}
+
+.home{ background-color: @menuBrown; }
+.bosz{ background-color: @menuArmy; }
+.accordion, .accordeon{ background-color: @menuGrass; }
+.adults, #volwassenen{ background-color: @menuGreen; }
+.kids{ background-color: @menuTeal; }
+.faq{ background-color: @menuRed; }
+.tarieven, .tuition{ background-color: @menuOrange; }
+.contact{ background-color: @menuGray; }
+
+/*
+.home{ background: -moz-linear-gradient(to bottom, @menuBrown 0%,@menuArmy 100%); }
+.bosz{ background: -moz-linear-gradient(to bottom, @menuArmy 0%,@menuGrass 100%); }
+.accordion, .accordeon{ background: -moz-linear-gradient(to bottom, @menuGrass 0%,@menuGreen 100%); }
+.adults, .volwassenen{ background: -moz-linear-gradient(to bottom, @menuGreen 0%,@menuTeal 100%); }
+.kids{ background: -moz-linear-gradient(to bottom, @menuTeal 0%,@menuRed 100%); }
+.faq{ background: -moz-linear-gradient(to bottom, @menuRed 0%,@menuOrange 100%); }
+.tarieven, .tuition{ background: -moz-linear-gradient(to bottom, @menuOrange 0%,@menuGray 100%); }
+.contact{ background: -moz-linear-gradient(to bottom, @menuGray 0%,@menuBrown 100%); }
+*/

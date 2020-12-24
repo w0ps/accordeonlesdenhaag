@@ -1,0 +1,64 @@
+extends layout
+
+block content
+  section.page
+    h1 Prices
+    br
+    p
+      img.vingertje(src="/images/vingertje.jpg")
+      | THE FIRST LESSON IS FOR FREE
+    table.priceTable
+      tr
+        td Youth
+        td per month
+        td
+          span.price &#8364;
+            | 50,-
+        td (half hour a week)
+      tr
+        td Youth duo
+        td per month
+        td
+          span.price &#8364;
+            | 30,-
+        td (per student)
+          br
+          br
+      tr
+        td Adults
+        td per month
+        td 
+          span.price &#8364;
+            | 56,-
+        td (half hour a week)
+      tr
+        td
+        td per month
+        td
+          span.price &#8364;
+            | 32,50
+        td (half hour every 2 weeks)
+      tr
+        td
+        td per month
+        td
+          span.price &#8364;
+            | 90,-
+        td (one hour a week)
+          br
+          br
+      tr
+        td Other types of courses:
+        td rates in consultation
+      tr
+        td Rent an accordeon
+        td per month
+        td
+          span.price &#8364;
+            | 25,-
+        td (plus bail)
+      tr
+        td
+          br
+          | Rates by direct debit
+    include pricesImages

@@ -1,0 +1,7 @@
+before finished:
+
+- alle plaatjes nalopen en verkleinen naar resolutie waarop ze gebruikt zijn
+
+during deploy:
+-change name of style_.css to style.css because of failed cache setting
+-set cache duration to something reasonable
