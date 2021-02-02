@@ -31,20 +31,20 @@ app.configure(function(){
   app.set('port', process.env.PORT);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
+  app.use(require('less-middleware')(__dirname + '/public'));
   app.use(express.static(path.join(__dirname, 'public'), { maxAge: clientCacheLimit } ));
-  app.use(require('less-middleware')( { src: __dirname + '/public' } ));
   app.use(express.errorHandler());
-  
+
   app.use(express.favicon(__dirname + ' /static/images/favicon.ico '));
   app.use(express.logger('dev'));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
-  
+
   app.use(express.cookieParser('sweet sensemilla'));
   app.use(express.session());
-  
+
   app.use(domainStraighter());
-  
+
   app.use(app.router);
   //app.use(function(){ console.log(arguments); });
 });

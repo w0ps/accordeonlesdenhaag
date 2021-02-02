@@ -1,22 +1,28 @@
-#portrait{
-  top: 30px;
-  bottom: 50px;
-  right: 0px;
-  float: right;
-  margin: 20px;
-  font-size: .6em;
-  font-stretch: extra-expanded;
-  h1{
+#portrait {
+  h1 {
     color: @softRed;
+    font-stretch: extra-expanded;
+  }
+
+  margin: 20px auto;
+  zoom: 0.5;
+
+  @media(min-width: 1090px) {
+    top: 30px;
+    bottom: 50px;
+    right: 0px;
+    float: right;
+    zoom: 1;
   }
 }
+
 
 .imgColumn{
   position: absolute;
   width: 200px;
   top: 275px;
   right: 25px;
-  
+
   /* bosz */
   #boszacc{
     float: right;
@@ -44,7 +50,7 @@
     right: 40px;
     top: 1075px;
   }
-  
+
   /* accordion */
   #oldhohner{
     position: absolute;
@@ -66,7 +72,7 @@
     right: 25px;
     top: 325px;
   }
-  
+
   /* kids */
   #children1{
     position: absolute;

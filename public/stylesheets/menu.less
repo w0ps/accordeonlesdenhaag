@@ -1,6 +1,40 @@
 /*@import ("stylesheets/colors.less")*/
 
-ul#menu{
+html[lang=nl] {
+	#hamburger::after {
+		content: 'Menu'
+	}
+
+	#menuwrap.open #hamburger::after {
+		content: 'Sluit menu'
+	}
+}
+
+html[lang=en] {
+	#hamburger::after {
+		content: 'Menu'
+	}
+	#menuwrap.open #hamburger::after {
+		content: 'Close menu'
+	}
+}
+
+#hamburger {
+	display: none;
+
+	@media(max-width: 890px) {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		right: 25px;
+		position: absolute;
+		background-image: url('/images/hamcordion.svg');
+		z-index: 100;
+		margin-top: -9px;
+	}
+}
+
+nav#menu{
 	background: #469a33;
 	font-family: FolksBold;
 	font-size: 1.5em;
@@ -8,7 +42,7 @@ ul#menu{
 	padding: 0;
 	display: flex;
 
-  li{
+  a{
 	  height: 60px;
 	  list-style: none;
 	  text-align: center;
@@ -16,17 +50,31 @@ ul#menu{
 	  cursor: pointer;
 	  font-size: 19px;
 		flex-grow: 1;
+		color: white;
+		text-decoration: none;
+		text-shadow: 0 0 2px black;
 
-    a{
-	    color: white;
-      text-decoration: none;
-	    text-shadow: 0 0 2px black;
-         &:hover{
-           text-shadow: 0 0 8px black;
-         }
-    }
+		&:hover{
+			text-shadow: 0 0 8px black;
+		}
   }
 }
+
+@media(max-width: 890px) {
+	nav#menu {
+		display: none;
+		flex-direction: column;
+
+		a {
+			font-size: 26px;
+		}
+	}
+
+	#menuwrap.open nav#menu {
+		display: flex;
+	}
+}
+
 
 .home{ background-color: @menuBrown; }
 .bosz{ background-color: @menuArmy; }
