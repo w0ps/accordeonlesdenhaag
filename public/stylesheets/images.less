@@ -18,79 +18,120 @@
 
 
 .imgColumn{
-  position: absolute;
-  width: 200px;
-  top: 275px;
-  right: 25px;
-
-  /* bosz */
-  #boszacc{
-    float: right;
-    position: relative;
-    right: 50px;
-  }
-  #vive{
+  @media (min-width: 1200px) {
     position: absolute;
-    right: 40px;
-    top: 350px;
-    img{
+    width: 200px;
+    top: 275px;
+    right: 25px;
+
+    /* bosz */
+    #boszacc{
+      float: right;
+      position: relative;
+      right: 50px;
+    }
+    #vive{
+      position: absolute;
+      right: 40px;
+      top: 350px;
+
+      img{
+        width: 235px;
+      }
+    }
+    #bohemjenz{
+      position: absolute;
+      right: 40px;
+      top: 750px;
+
+      img{
+        width: 235px;
+      }
+    }
+    #schicks{
+      position: absolute;
+      right: 40px;
+      top: 1075px;
+    }
+
+    /* accordion */
+    #oldhohner{
+      position: absolute;
+      right: 25px;
+    }
+    #uprising{
+      position: absolute;
+      right: 25px;
+      top: 285px;
+    }
+    #meyer{
+      position: absolute;
+      top: 700px;
+      right: 25px;
+    }
+    #innards{
       width: 235px;
+      position: absolute;
+      right: 25px;
+      top: 325px;
+    }
+
+    /* kids */
+    #children1{
+      position: absolute;
+      right: 25px;
+      top: 0;
     }
   }
-  #bohemjenz{
-    position: absolute;
-    right: 40px;
-    top: 750px;
-    img{
-      width: 235px;
+
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    > * {
+      margin: 20px;
     }
-  }
-  #schicks{
-    position: absolute;
-    right: 40px;
-    top: 1075px;
-  }
 
-  /* accordion */
-  #oldhohner{
-    position: absolute;
-    right: 25px;
-  }
-  #uprising{
-    position: absolute;
-    right: 25px;
-    top: 285px;
-  }
-  #meyer{
-    position: absolute;
-    top: 700px;
-    right: 25px;
-  }
-  #innards{
-    width: 235px;
-    position: absolute;
-    right: 25px;
-    top: 325px;
-  }
+    img {
+      width: 200px;
+    }
 
-  /* kids */
-  #children1{
-    position: absolute;
-    right: 25px;
-    top: 0;
+    > div {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
 #giantAcc{
-  position: absolute;
   height: 400px;
-  top: 830px;
-  right: 50px;
+
+  @media (min-width: 1200px) {
+    position: absolute;
+    top: 830px;
+    right: 50px;
+  }
+
+  @media (max-width: 1199px) {
+    display: block;
+    max-width: 100%;
+    margin: 50px auto 20px auto;
+  }
 }
 
 #comets{
-  position: relative;
-  left: 50px;
+  max-width: 100%;
+
+  @media (min-width: 1200px) {
+    margin-left: 50px;
+  }
+
+  @media (max-width: 1199px) {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .vingertje{

@@ -16,7 +16,6 @@ var oneYear = 31557600000,
     clientCacheLimit = 0, //oneYear,
     domainStraighter = function(){
       return function(req, res){
-        console.log(req.querystring); 
         if(req.host == 'accordeonlesdenhaag.nl') res.redirect('http://www.accordeonlesdenhaag.nl' + req.path );
         else req.next();
       };
