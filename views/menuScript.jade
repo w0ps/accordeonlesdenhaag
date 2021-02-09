@@ -1,0 +1,13 @@
+script.
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('menuwrap').classList.toggle('open');
+  });
+
+  var part;
+  for (part of location.search.slice(1).split('&')) {
+    const [key, value] = part.split('=');
+    
+    if (key === 'menu') {
+      document.getElementById('menuwrap').classList.add('open');
+    }
+  }
