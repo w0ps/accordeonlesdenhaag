@@ -3,6 +3,8 @@
  * Module dependencies.
  */
 
+console.log('anything?');
+
 var express = require('express'),
     routes =  require('./routes'),
     user = require('./routes/user'),
